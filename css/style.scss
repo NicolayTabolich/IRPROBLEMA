@@ -568,10 +568,10 @@ body {
          & img {
                max-width: 100%;
                @media (max-width: 885px){
-                  max-height: 370px;
+                  max-height: 350px;
                }
                @media (max-width: 600px){
-                  max-height: 300px;
+                  max-height: 200px;
                }
             }
       }
@@ -684,6 +684,9 @@ body {
    }
    &__img {
       max-width: 430px;
+      @media (max-width: 700.98px){
+         max-width: 320px;
+      }
       & img{
          max-width: 100%;
       }
