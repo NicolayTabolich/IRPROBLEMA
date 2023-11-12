@@ -313,9 +313,6 @@ body {
   background: #FFC158;
   outline: none;
 }
-.header__select:hover {
-  color: #fff;
-}
 .header__select:active {
   color: #000;
 }
@@ -361,9 +358,6 @@ body {
   .header__option {
     font-size: 13px;
   }
-}
-.header__bg.active img {
-  display: none;
 }
 .header__bg-mobile1 {
   position: absolute;
