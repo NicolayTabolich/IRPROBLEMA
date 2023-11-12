@@ -220,13 +220,9 @@ body {
     overflow: auto;
     background: #fff;
     padding: 20px 10px 20px 10px;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .header__links.active {
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
     z-index: 1;
-    top: 0px;
-    padding: 188px 0 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -238,6 +234,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 58px;
+  }
+  .header__links.active {
+    z-index: 1;
+    top: 0px;
+    padding: 168px 0 30px 0;
   }
 }
 .header__ul {
@@ -639,6 +640,31 @@ body {
   }
 }
 
+@media (min-width: 2800.98px) {
+  .two {
+    padding: 450px 0px 20px 90px;
+  }
+}
+@media (min-width: 2500.98px) {
+  .two {
+    padding: 300px 0px 20px 90px;
+  }
+}
+@media (max-width: 2500.98px) {
+  .two {
+    padding: 230px 0px 0px 90px;
+  }
+}
+@media (max-width: 2200.98px) {
+  .two {
+    padding: 100px 0px 0px 90px;
+  }
+}
+@media (max-width: 2000.98px) {
+  .two {
+    padding: 0px 0px 0px 90px;
+  }
+}
 .two__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,6 +680,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (min-width: 2200.98px) {
+  .two__body {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 .two__bg_2mob {
@@ -731,12 +763,26 @@ body {
 .three__bagr {
   position: absolute;
   z-index: -2;
-  top: 55%;
-  right: -28%;
+  top: 56%;
+  right: -40%;
   -webkit-transform: translate(0, -65%);
       -ms-transform: translate(0, -65%);
           transform: translate(0, -65%);
   width: 100%;
+}
+@media (min-width: 2500px) {
+  .three__bagr {
+    display: none;
+  }
+}
+@media (max-width: 2000px) {
+  .three__bagr {
+    top: 57%;
+    right: -34%;
+    -webkit-transform: translate(0, -69%);
+        -ms-transform: translate(0, -69%);
+            transform: translate(0, -69%);
+  }
 }
 @media (max-width: 1200px) {
   .three__bagr {
@@ -771,7 +817,14 @@ body {
   }
 }
 .three__bagr img {
-  max-width: 100%;
+  width: 1500px;
+  height: 100%;
+}
+@media (max-width: 2000px) {
+  .three__bagr img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .three__title {
   display: -webkit-box;
@@ -921,6 +974,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0px 128px;
 }
 @media (max-width: 1280px) {
@@ -941,6 +997,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0px 120px;
 }
 @media (max-width: 700.98px) {
@@ -1070,4 +1129,71 @@ body {
             align-items: center;
     row-gap: 10px;
   }
+}
+
+.footer {
+  position: relative;
+  padding: 200px 0px 97px 0px;
+  position: relative;
+}
+@media (max-width: 1500px) {
+  .footer {
+    padding: 200px 0px 70px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 200px 0px 20px 0px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer {
+    padding: 100px 0px 47px 0px;
+  }
+}
+@media (max-width: 700.98px) {
+  .footer {
+    padding: 50px 0px 20px 0px;
+  }
+}
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px 100px;
+}
+.footer__links a {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media (max-width: 700.98px) {
+  .footer__links a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px 100px;
+  }
+}
+.footer__bg {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.footer__bg img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
