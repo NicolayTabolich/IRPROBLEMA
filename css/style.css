@@ -642,27 +642,27 @@ body {
 
 @media (min-width: 2800.98px) {
   .two {
-    padding: 450px 0px 20px 90px;
+    padding: 450px 0px 20px 0px;
   }
 }
 @media (min-width: 2500.98px) {
   .two {
-    padding: 300px 0px 20px 90px;
+    padding: 300px 0px 20px 0px;
   }
 }
 @media (max-width: 2500.98px) {
   .two {
-    padding: 230px 0px 0px 90px;
+    padding: 230px 0px 90px 0px;
   }
 }
 @media (max-width: 2200.98px) {
   .two {
-    padding: 100px 0px 0px 90px;
+    padding: 100px 0px 90px 0px;
   }
 }
 @media (max-width: 2000.98px) {
   .two {
-    padding: 0px 0px 0px 90px;
+    padding: 0px 0px 10px 0px;
   }
 }
 .two__body {
@@ -673,19 +673,22 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 885px) {
-  .two__body {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 @media (min-width: 2200.98px) {
   .two__body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+@media (max-width: 885px) {
+  .two__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .two__bg_2mob {
