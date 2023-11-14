@@ -85,6 +85,7 @@ main {
 }
 
 [class*=__container] {
+  max-width: 1560px;
   margin: 0px auto;
   padding: 0px 50px;
 }
@@ -1135,9 +1136,8 @@ body {
 }
 
 .footer {
-  position: relative;
-  padding: 200px 0px 97px 0px;
-  position: relative;
+  background: url(../img/footer/bg_footer.svg) 0 -150%/cover no-repeat;
+  padding: 200px 0px 70px 0px;
 }
 @media (max-width: 1500px) {
   .footer {
@@ -1188,15 +1188,4 @@ body {
             flex-direction: column;
     gap: 30px 100px;
   }
-}
-.footer__bg {
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-.footer__bg img {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
 }

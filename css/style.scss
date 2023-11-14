@@ -13,7 +13,7 @@ main {
 }
 
 [class*="__container"] {
-   // max-width: 1560px;
+   max-width: 1560px;
    margin: 0px auto;
    padding: 0px 50px;
 }
@@ -557,6 +557,7 @@ body {
       
    }
 
+
    // .two__bg
    &__bg_2mob{
       display: none;
@@ -891,10 +892,8 @@ body {
 }
 
 .footer {
-         position: relative;
-         padding: 200px 0px 97px 0px;
-         position: relative;
-        
+         background: url(../img/footer/bg_footer.svg) 0 -150% / cover no-repeat;
+         padding: 200px 0px 70px 0px;
          @media (max-width: 1500px){
             padding: 200px 0px 70px 0px;
          }
@@ -938,17 +937,9 @@ body {
 
    
    &__bg {
-      width: 100%;
-      top:0;
-      left: 0;
-      // padding-bottom: 90%;
-      & img{
-         position: relative;
-         z-index: -1;
-         width: 100%;
-         height: 100%;
+      
       }
-   }
+   
 
    &__link {}
 }
