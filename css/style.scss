@@ -2,11 +2,11 @@
 
 :root {
    --color_orng: #FBB03B;
-   --light-color: #666;
-   --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-
 }
 
+*{
+   transition: .17s all linear;
+}
 
 main {
    flex-grow: 1;
@@ -372,12 +372,21 @@ body {
       // ._link-btn
    
       ._link-btn {
+         display: inline-block;
          color: #FFF;
          font-size: 18px;
          font-weight: 500;
          border-radius: 50px;
          background: #FF8D3F;
          padding: 22px 50px;
+         &:hover{
+            background: #FFA161;
+            color: #FFD;
+            transform: translate(0, -3%);
+         }
+         &:active{
+            color:#000;
+         }
       }
 .first {
    padding: 80px 0 439px 0;
@@ -837,9 +846,16 @@ body {
                width: 80px;
             }
       }
+
       & a img {
          max-width: 100%;
+         transition: .3s all line;
+         
+         &:hover {
+            transform: scale(1.02);
+         }
       }
+
       gap: 0px 20px;
       display: flex;
       justify-content: center;
@@ -859,6 +875,9 @@ body {
       font-size: 22px;
       font-weight: 600;
       text-transform: uppercase;
+      &:hover{
+         color: #FBB03B;
+      }
       @media (max-width: 700.98px){
          font-size: 18px;
       }
@@ -877,6 +896,10 @@ body {
       }
       & a img{
       max-width: 100%;
+      transition: .3s all line;
+      &:hover {
+            transform: scale(1.02);
+         }
       }
       gap: 0px 20px;
       display: flex;
@@ -892,16 +915,13 @@ body {
 }
 
 .footer {
-         background: url(../img/footer/bg_footer.svg) 0 -150% / cover no-repeat;
-         padding: 200px 0px 70px 0px;
-         @media (max-width: 1500px){
-            padding: 200px 0px 70px 0px;
+         background: url(../img/footer/bg_footer.svg) 0 -10% / cover no-repeat;
+         padding: 200px 0px 50px 0px;
+         @media (max-width: 1000px) {
+               padding: 150px 0px 47px 0px;
          }
-          @media (max-width: 1200px){
-            padding: 200px 0px 20px 0px;
-         }
-            @media (max-width: 1000px) {
-               padding: 100px 0px 47px 0px;
+         @media (max-width: 950px){
+            padding: 120px 0px 47px 0px;
          }
          @media (max-width: 700.98px){
             padding: 50px 0px 20px 0px;
@@ -922,15 +942,23 @@ body {
          font-size: 18px;
          font-weight: 500;
          text-transform: uppercase;
+         &:hover{
+            color: rgba( #000000, .6);
+         }
          @media (max-width: 700.98px) {
                font-size: 14px;
             }
       }
       @media (max-width: 1000px){
-         flex-direction: column;
+         // flex-direction: column;
          gap: 30px 100px;
+         font-size: 16px;
       }
-    
+      @media (max-width: 950px){
+         flex-direction: column;
+         gap: 25px 100px;
+         font-size: 14px;
+      }
    }
 
    // .footer__bg
@@ -943,4 +971,3 @@ body {
 
    &__link {}
 }
-
